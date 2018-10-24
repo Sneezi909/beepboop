@@ -4,7 +4,7 @@ def convert(file_name, array):
         for note in array:
             string = note_to_string(note)
             f.write(string)
-
+    
 
 
 def note_to_string(note): 
