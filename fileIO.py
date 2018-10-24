@@ -1,5 +1,4 @@
-import * from ailyn.py
-
+import * from parse-beep-music.py
 
 def convert_to_file(file_name, array): 
     # Outputs the array into a file with the specified fileName for the bash script to read
@@ -22,7 +21,7 @@ if __name__== "__main__":
     if len(sys.argv) != 2: 
         print("Incorrect Arguments, check to see if the midi file exists in the given directory.")
         sys.exit()
-    low, mid, high = # Insert array conversion from midi
+    low, mid, high = parse-beep-music.py
     convert_to_file(low)
     convert_to_file(mid)
     convert_to_file(high)
