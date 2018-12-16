@@ -1,7 +1,7 @@
 import mido
 
-def return_voices():
-    mid = mido.MidiFile('Mario-Sheet-Music-Overworld-Main-Theme.mid')
+def return_voices(mid):
+    mid = mido.MidiFile(mid)
 
     time = 0
 
@@ -167,10 +167,9 @@ for p in peter_r:
 # use sid_r
 # use vincent_r
 # use peter_r
+r_l.append(l[len(l) - 1])
 
-        r_l.append(l[len(l) - 1])
-
-        return r_l
+return r_l
 
     sid_r = add_rests(sid)
     vincent_r = add_rests(vincent)
